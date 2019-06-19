@@ -1,0 +1,32 @@
+// Color Map
+$colors: (
+  primary-red: hsl(0, 100%, 74%),
+  primary-blue: hsl(154, 59%, 51%),
+  accent-blue: hsl(248, 32%, 49%),
+  neutral-db: hsl(249, 10%, 26%),
+  neutral-gb: hsl(246, 25%, 77%)
+);
+
+// Color Function
+@function color($colors-name) {
+  @return map-get($colors, $colors-name);
+}
+
+//Weight Map
+$font-weight: (
+  regular: 400,
+  medium: 500,
+  semi-bold: 600,
+  bold: 700,
+);
+
+//Weight Function
+@function weight($size) {
+  @return map-get($font-weight, $size);
+}
+
+// variables
+$font-size: 16px;
+$font-family: 'Poppins', sans-serif;
+
+// styles
