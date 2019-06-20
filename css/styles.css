@@ -1,3 +1,28 @@
 body {
   background-color: #ff7a7a;
-  background-image: url("/Users/laustefiles/github/LTC/images/bg-intro-mobile.png"); }
+  background-image: url("/Users/laustefiles/github/LTC/images/bg-intro-mobile.png");
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem; }
+
+#landing-page .content {
+  margin: 6.25rem 1.25rem 2rem 1.25rem; }
+  #landing-page .content h1, #landing-page .content p {
+    color: #FAFAFA;
+    text-align: center; }
+  #landing-page .content h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1.8rem; }
+
+#landing-page .form {
+  margin: auto 1rem auto 1rem; }
+  #landing-page .form .try-it {
+    background-color: #6055a5;
+    border-radius: 5px;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2); }
+    #landing-page .form .try-it p {
+      text-align: center;
+      color: #FAFAFA;
+      padding: 1.3rem; }
+      #landing-page .form .try-it p .strong-text {
+        font-weight: 600; }

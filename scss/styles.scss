@@ -4,7 +4,8 @@ $colors: (
   primary-blue: hsl(154, 59%, 51%),
   accent-blue: hsl(248, 32%, 49%),
   neutral-db: hsl(249, 10%, 26%),
-  neutral-gb: hsl(246, 25%, 77%)
+  neutral-gb: hsl(246, 25%, 77%),
+  text-white: #FAFAFA
 );
 
 // Color Function
@@ -26,7 +27,7 @@ $font-weight: (
 }
 
 // variables
-$font-size: 16px;
+$font-body-size: 1rem;
 $font-family: 'Poppins', sans-serif;
 
 // styles
@@ -34,8 +35,45 @@ $font-family: 'Poppins', sans-serif;
 body {
   background-color: color(primary-red);
   background-image: url("/Users/laustefiles/github/LTC/images/bg-intro-mobile.png");
+  font-family: $font-family;
+  font-size: $font-body-size;
 }
 
 #landing-page {
+  .content {
+    margin: 6.25rem 1.25rem 2rem 1.25rem;
 
+    h1, p {
+      color: color(text-white);
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: weight(semi-bold);
+      font-size: 2rem;
+      margin-bottom: 1.8rem;
+    }
+  }
+
+  .form {
+    margin: auto 1rem auto 1rem;
+    .try-it {
+      background-color: color(accent-blue);
+      border-radius: 5px;
+      box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+
+      p {
+        text-align: center;
+        color: color(text-white);
+        padding: 1.3rem;
+        .strong-text {
+          font-weight: weight(semi-bold);
+        }
+      }
+    }
+
+    .sign-up {
+
+    }
+  }
 }
