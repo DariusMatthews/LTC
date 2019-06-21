@@ -112,3 +112,23 @@ body {
 
 // TODO: FIX CONTENT ALIGNMENT AT 769px
 // TODO: STYLE PAGE FOR LAPTOP AND DESKTAP SCREENS
+
+@media only screen and (min-width: 1200px) {
+  #landing-page {
+    margin-top: 125px;
+
+    .content {
+      padding-top: 75px;
+
+      .ltc, .text {
+        text-align: left;
+      }
+      .ltc {
+        font-size: 3rem;
+      }
+      .text {
+        width: 455px;
+      }
+    }
+  }
+}
