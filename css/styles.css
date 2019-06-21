@@ -63,3 +63,15 @@ body {
         font-size: 3rem; }
       #landing-page .content .text {
         width: 455px; } }
+
+@media only screen and (min-width: 992px) {
+  #landing-page {
+    margin-top: 125px; }
+    #landing-page .content {
+      padding-top: 75px; }
+      #landing-page .content .ltc, #landing-page .content .text {
+        text-align: left; }
+      #landing-page .content .ltc {
+        font-size: 3rem; }
+      #landing-page .content .text {
+        width: 400px; } }
