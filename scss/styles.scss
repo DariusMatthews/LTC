@@ -1,7 +1,7 @@
 // Color Map
 $colors: (
   primary-red: hsl(0, 100%, 74%),
-  primary-blue: hsl(154, 59%, 51%),
+  primary-green: hsl(154, 59%, 51%),
   accent-blue: hsl(248, 32%, 49%),
   neutral-db: hsl(249, 10%, 26%),
   neutral-gb: hsl(246, 25%, 77%),
@@ -29,6 +29,8 @@ $font-weight: (
 // variables
 $font-body-size: 1rem;
 $font-family: 'Poppins', sans-serif;
+$shadow: 0 6px rgba(0, 0, 0, 0.2);
+$big-shadow: 0 8px rgba(0, 0, 0, 0.2);
 
 // styles
 
@@ -56,12 +58,12 @@ body {
   }
 
   .form {
-    margin: auto 1rem auto 1rem;
+    margin: auto 1.25rem auto 1.25rem;
     .try-it {
       background-color: color(accent-blue);
-      border-radius: 5px;
-      box-shadow: 0 6px rgba(0, 0, 0, 0.2);
-
+      border-radius: 10px;
+      box-shadow: $shadow;
+      margin-bottom: 2rem;
       p {
         text-align: center;
         color: color(text-white);
@@ -73,7 +75,40 @@ body {
     }
 
     .sign-up {
+      height: 450px;
+      border-radius: 10px;
+      box-shadow: $big-shadow;
+      margin-bottom: 100px;
 
+      .free-trial {
+        input, button {
+          margin-bottom: 1rem;
+        }
+        input {
+          padding: 1.8rem;
+          color: color(neutral-db);
+        }
+        button {
+          background-color: color(primary-green);
+          border-color: color(primary-green);
+          font-size: 1rem;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          box-shadow: 0 4px rgba(47, 182, 124, 0.9);
+        }
+        p {
+          font-size: 12px;
+          color: color(neutral-gb);
+          font-weight: weight(medium);
+          span {
+            color: color(primary-red);
+            font-weight: weight(bold);
+          }
+        }
+      }
     }
   }
 }
+
+// TODO: FIX CONTENT ALIGNMENT AT 769px
+// TODO: STYLE PAGE FOR LAPTOP AND DESKTAP SCREENS

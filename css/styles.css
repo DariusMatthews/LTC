@@ -15,14 +15,39 @@ body {
     margin-bottom: 1.8rem; }
 
 #landing-page .form {
-  margin: auto 1rem auto 1rem; }
+  margin: auto 1.25rem auto 1.25rem; }
   #landing-page .form .try-it {
     background-color: #6055a5;
-    border-radius: 5px;
-    box-shadow: 0 6px rgba(0, 0, 0, 0.2); }
+    border-radius: 10px;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem; }
     #landing-page .form .try-it p {
       text-align: center;
       color: #FAFAFA;
       padding: 1.3rem; }
       #landing-page .form .try-it p .strong-text {
         font-weight: 600; }
+  #landing-page .form .sign-up {
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 100px; }
+    #landing-page .form .sign-up .free-trial input, #landing-page .form .sign-up .free-trial button {
+      margin-bottom: 1rem; }
+    #landing-page .form .sign-up .free-trial input {
+      padding: 1.8rem;
+      color: #3e3c49; }
+    #landing-page .form .sign-up .free-trial button {
+      background-color: #38cc8c;
+      border-color: #38cc8c;
+      font-size: 1rem;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      box-shadow: 0 4px rgba(47, 182, 124, 0.9); }
+    #landing-page .form .sign-up .free-trial p {
+      font-size: 12px;
+      color: #b9b6d3;
+      font-weight: 500; }
+      #landing-page .form .sign-up .free-trial p span {
+        color: #ff7a7a;
+        font-weight: 700; }
