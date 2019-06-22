@@ -25,13 +25,23 @@
         </div>
         <div class="card sign-up">
           <div class="card-body text-center">
-            <form action="">
+            <form novalidate id="form" action="">
               <div class="form-group free-trial">
+
                 <input type="text" class="form-control" name="first name" placeholder="First Name">
+                <small id="fname" class="error-text"><em></em></small>
+
                 <input type="text" class="form-control" name="last name" placeholder="Last Name">
+                <small  id="lname" class="error-text"><em></em></small>
+
                 <input type="email" class="form-control" name="email address" placeholder="Email Address">
+                <small id="mail" class="error-text"><em></em></small>
+
                 <input type="password" class="form-control" name="password" placeholder="Password">
-                <button type="submit" class="btn btn-primary btn-lg btn-block" name="free trial">CLAIM YOUR FREE TRIAL</button>
+                <small id="pword" class="error-text"><em></em></small>
+
+                <button form="form" type="submit" class="btn btn-primary btn-lg btn-block" name="free trial">CLAIM YOUR FREE TRIAL</button>
+
                 <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
               </div>
             </form>

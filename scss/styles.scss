@@ -13,7 +13,7 @@ $colors: (
   @return map-get($colors, $colors-name);
 }
 
-//Weight Map
+// Weight Map
 $font-weight: (
   regular: 400,
   medium: 500,
@@ -21,19 +21,18 @@ $font-weight: (
   bold: 700,
 );
 
-//Weight Function
+// Weight Function
 @function weight($size) {
   @return map-get($font-weight, $size);
 }
 
-// variables
+// Variables
 $font-body-size: 1rem;
 $font-family: 'Poppins', sans-serif;
 $shadow: 0 6px rgba(0, 0, 0, 0.2);
 $big-shadow: 0 8px rgba(0, 0, 0, 0.2);
 
-// styles
-
+// Styles
 body {
   background-color: color(primary-red);
   background-image: url("/Users/laustefiles/github/LTC/images/bg-intro-mobile.png");
@@ -81,12 +80,26 @@ body {
       margin-bottom: 100px;
 
       .free-trial {
-        input, button {
+        small, button {
           margin-bottom: 1rem;
         }
         input {
           padding: 1.8rem;
           color: color(neutral-db);
+        }
+        .error {
+          border-color: color(primary-red);
+          border-width: medium;
+          background-image: url("/Users/laustefiles/github/LTC/images/icon-error.svg");
+          background-position: 450px 18px;
+          background-repeat: no-repeat;
+        }
+        .error-text {
+          color: color(primary-red);
+          font-size: .7rem;
+          display: flex;
+          justify-content: flex-end;
+          padding-top: .3rem;
         }
         button {
           background-color: color(primary-green);
@@ -107,10 +120,13 @@ body {
         }
       }
     }
+    .extra-card {
+      padding-bottom: 530px;
+    }
   }
 }
 
-
+// Queries for responsiveness
 @media only screen and (min-width: 1200px) {
   #landing-page {
     margin-top: 125px;

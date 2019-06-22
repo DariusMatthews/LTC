@@ -32,11 +32,23 @@ body {
     border-radius: 10px;
     box-shadow: 0 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 100px; }
-    #landing-page .form .sign-up .free-trial input, #landing-page .form .sign-up .free-trial button {
+    #landing-page .form .sign-up .free-trial small, #landing-page .form .sign-up .free-trial button {
       margin-bottom: 1rem; }
     #landing-page .form .sign-up .free-trial input {
       padding: 1.8rem;
       color: #3e3c49; }
+    #landing-page .form .sign-up .free-trial .error {
+      border-color: #ff7a7a;
+      border-width: medium;
+      background-image: url("/Users/laustefiles/github/LTC/images/icon-error.svg");
+      background-position: 450px 18px;
+      background-repeat: no-repeat; }
+    #landing-page .form .sign-up .free-trial .error-text {
+      color: #ff7a7a;
+      font-size: .7rem;
+      display: flex;
+      justify-content: flex-end;
+      padding-top: .3rem; }
     #landing-page .form .sign-up .free-trial button {
       background-color: #38cc8c;
       border-color: #38cc8c;
@@ -51,6 +63,8 @@ body {
       #landing-page .form .sign-up .free-trial p span {
         color: #ff7a7a;
         font-weight: 700; }
+  #landing-page .form .extra-card {
+    padding-bottom: 530px; }
 
 @media only screen and (min-width: 1200px) {
   #landing-page {
