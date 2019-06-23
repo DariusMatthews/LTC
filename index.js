@@ -22,14 +22,16 @@ var errorEM = $("#mail");
 var errorPW = $("#pword");
 var validEmail = /[a-zA-Z]+[1-9]*[@]{1}[a-z]+[.]{1}[a-z]/;
 
+
 form.submit(formErrors);
 
 function formErrors(i) {
-  if (!validEmail.test(email.value)) {
-    email.addClass("error");
-    errorEM.text("Looks like this is not an email");
-    email.attr("placeholder", "");
-  }
+
+  if (firstName.text("")) {
+    firstName.addClass("error");
+    errorFN.text("First Name cannot be empty");
+    firstName.attr("placeholder", "");
+  } 
 
   if (lastName.text("")) {
     lastName.addClass("error");
@@ -37,15 +39,15 @@ function formErrors(i) {
     lastName.attr("placeholder", "");
   }
 
-  if (firstName.text("")) {
-    firstName.addClass("error");
-    errorFN.text("First Name cannot be empty");
-    firstName.attr("placeholder", "");
+  if (!validEmail.test(email)) {
+    email.addClass("error");
+    errorEM.text("Looks like this is not an email");
+    email.attr("placeholder", "");
   }
 
   if (password.text("")) {
     password.addClass("error");
-    errorPW.text("Looks like this is not an email");
+    errorPW.text("Password cannot be empty");
     password.attr("placeholder", "");
   }
 

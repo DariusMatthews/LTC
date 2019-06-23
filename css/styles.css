@@ -1,6 +1,6 @@
 body {
   background-color: #ff7a7a;
-  background-image: url("/Users/laustefiles/github/LTC/images/bg-intro-mobile.png");
+  background-image: url("../images/bg-intro-mobile.png");
   font-family: "Poppins", sans-serif;
   font-size: 1rem; }
 
@@ -40,7 +40,7 @@ body {
     #landing-page .form .sign-up .free-trial .error {
       border-color: #ff7a7a;
       border-width: medium;
-      background-image: url("/Users/laustefiles/github/LTC/images/icon-error.svg");
+      background-image: url("../images/icon-error.svg");
       background-position: 450px 18px;
       background-repeat: no-repeat; }
     #landing-page .form .sign-up .free-trial .error-text {
